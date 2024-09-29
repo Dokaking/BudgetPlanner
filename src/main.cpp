@@ -11,9 +11,10 @@ int main()
 	bp.askForIncomes();
 	bp.askForCosts();
 
-	bp.calcSum(bp.income, bp.costs);
-	bp.calcPercent(bp.income, bp.costs);
+	bp.calcSum();
+	bp.calcPercent();
 
-	bp.printSum(bp.income, bp.costs);
-	bp.printPercent(bp.income, bp.costs);
+	bp.printSum();
+	bp.printPercent();
+	bp.printResult();
 }

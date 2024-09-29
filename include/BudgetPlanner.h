@@ -11,21 +11,22 @@ public:
 	int tempCost;
 	std::vector<int> income;
 	std::vector<int> costs;
-	int sumIncome;
-	int sumCosts;
-	int sumTotal;
-	float percent;
-
 	bool anotherIncome;
 	bool anotherCost;
+
+	unsigned int sumIncome;
+	signed int sumCosts;
+	signed int sumTotal;
+	float percent;
 
 	void welcomeMsg();
 	void askForIncomes();
 	void askForCosts();
 
-	void calcSum(std::vector<int> income, std::vector<int> cost);
-	void calcPercent(std::vector<int> income, std::vector<int> cost);
+	void calcSum();
+	void calcPercent();
 
-	void printSum(std::vector<int> income, std::vector<int> cost);
-	void printPercent(std::vector<int> income, std::vector<int> cost);
+	void printSum();
+	void printPercent();
+	void printResult();
 };

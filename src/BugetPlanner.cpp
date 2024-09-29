@@ -33,30 +33,42 @@ void BudgetPlanner::askForCosts()
 	std::cout << std::endl;
 }
 
-void BudgetPlanner::calcSum(std::vector<int> income, std::vector<int> cost)
+void BudgetPlanner::calcSum()
 {
   for (auto i : income)
     {
       sumIncome += i;
     }
-  for (auto c : cost)
+  for (auto c : costs)
     {
       sumCosts += c;
     }
   sumTotal = sumIncome - sumCosts;
 }
 
-void BudgetPlanner::printSum(std::vector<int> income, std::vector<int> cost)
+void BudgetPlanner::printSum()
 {
 	std::cout << "After all costs you have " << sumTotal << " left." << std::endl;
 }
 
-void BudgetPlanner::calcPercent(std::vector<int> income, std::vector<int> cost)
+void BudgetPlanner::calcPercent()
 {
 	percent = static_cast<float>(sumCosts * 100) / sumIncome;
 }
 
-void BudgetPlanner::printPercent(std::vector<int> income, std::vector<int> cost)
+void BudgetPlanner::printPercent()
 {
-	std::cout << "That makes " << percent << "\% of your budget." << std::endl;
+	std::cout << "That costs are " << percent << "\% of your budget." << std::endl;
+}
+
+void BudgetPlanner::printResult()
+{
+	if (sumCosts < sumIncome)
+	{
+		std::cout << "The budget covers your costs." << std::endl;
+	}
+	else
+	{
+		std::cout << "The costs are too high for your budget." << std::endl;
+	}
 }
