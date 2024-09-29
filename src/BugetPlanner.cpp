@@ -58,7 +58,7 @@ void BudgetPlanner::calcPercent()
 
 void BudgetPlanner::printPercent()
 {
-	std::cout << "That costs are " << percent << "\% of your budget." << std::endl;
+	std::cout << "The costs make " << percent << "\% of your budget." << std::endl;
 }
 
 void BudgetPlanner::printResult()
