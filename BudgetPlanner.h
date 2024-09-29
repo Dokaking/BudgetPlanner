@@ -8,5 +8,8 @@ class BudgetPlanner
   std::vector<int> costs;
   int sum;
 
+  bool anotherIncome;
+  bool anotherCost;
+
   int calcSum(std::vector<int> income, std::vector<int> cost);
 }
