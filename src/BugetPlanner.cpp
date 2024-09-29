@@ -15,8 +15,8 @@ void BudgetPlanner::askForIncomes()
 		income.push_back(tempIncome);
 		std::cout << "Is there another income? (0/1) " << std::flush;
 		std::cin >> anotherIncome;
-		std::cout << std::endl;
 	} while (anotherIncome);
+	std::cout << std::endl;
 }
 
 void BudgetPlanner::askForCosts()
@@ -29,8 +29,8 @@ void BudgetPlanner::askForCosts()
 		costs.push_back(tempCost);
 		std::cout << "Is there another cost? (0/1) " << std::flush;
 		std::cin >> anotherCost;
-		std::cout << std::endl;
 	} while (anotherCost);
+	std::cout << std::endl;
 }
 
 void BudgetPlanner::calcSum(std::vector<int> income, std::vector<int> cost)
