@@ -9,8 +9,8 @@ class BudgetPlanner
 public:
 	int tempIncome;
 	int tempCost;
-	std::vector<int> income;
-	std::vector<int> costs;
+	std::vector<unsigned int> income;
+	std::vector<signed int> costs;
 	bool anotherIncome;
 	bool anotherCost;
 
