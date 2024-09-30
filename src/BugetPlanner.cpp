@@ -35,20 +35,20 @@ void BudgetPlanner::askForCosts()
 
 void BudgetPlanner::calcSum()
 {
-  for (auto i : income)
-    {
-      sumIncome += i;
-    }
-  for (auto c : costs)
-    {
-      sumCosts += c;
-    }
-  sumTotal = sumIncome - sumCosts;
+	for (auto i : income)
+	{
+		sumIncome += i;
+	}
+	for (auto c : costs)
+	{
+		sumCosts += c;
+	}
+	sumTotal = sumIncome - sumCosts;
 }
 
 void BudgetPlanner::printSum()
 {
-	std::cout << "After all costs you have " << sumTotal << " left." << std::endl;
+	std::cout << "After all costs you have " << sumTotal << " \u20AC left." << std::endl;
 }
 
 void BudgetPlanner::calcPercent()

@@ -1,10 +1,14 @@
 #pragma once
 
+#include <windows.h>
+
 #include "BudgetPlanner.h"
 
 int main()
 {
 	BudgetPlanner bp;
+
+	SetConsoleOutputCP(1252);
 
 	bp.welcomeMsg();
 
